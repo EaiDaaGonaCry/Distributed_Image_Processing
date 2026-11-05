@@ -6,8 +6,7 @@ import io
 import asyncio
 from concurrent.futures import ProcessPoolExecutor
 
-from image_math import laplace_filter, gaussian_blur, sobbel_detection
-
+from server.image_math import laplace_filter, gaussian_blur, sobbel_detection
 app = FastAPI()
 
 proc_pool = ProcessPoolExecutor()
